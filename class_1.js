@@ -1,3 +1,6 @@
+// classes are special functions
+// classes are not hoisted
+
 class Person {
   constructor(fName, lName) {
     this.firstName = fName;
