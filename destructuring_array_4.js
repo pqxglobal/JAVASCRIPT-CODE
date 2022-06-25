@@ -1,7 +1,7 @@
-let employee = ['Chandler', 'Bing', 'Female'];
+let units = ['l/h', 'C', 'Bar'];
 
-let [fname, lname, gender = 'Male'] = employee; // destructuring the employee array
+let [flow, temperature, pressure = 'PSI'] = units; // destructuring the units array
 
-console.log(fname);
-console.log(lname);
-console.log(gender);
+console.log(flow);
+console.log(temperature);
+console.log(pressure);
