@@ -4,8 +4,8 @@ let units = {
   pressure: 'Bar',
 };
 
-let { flow: f, temperature: t, pressure: p } = units; // destructuring the units object and create aliases
+let { flow: F, temperature: T, pressure: P } = units; // destructuring the units object and create aliases
 
-console.log(f);
-console.log(t);
-console.log(p);
+console.log(F);
+console.log(T);
+console.log(P);
