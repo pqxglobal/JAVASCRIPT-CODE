@@ -1,5 +1,5 @@
-let employee = ['Chandler', 'Bing', 'Male'];
+let units = ['l/h', 'C', 'Bar'];
 
-let [, , gender] = employee; // destructuring the employee array
+let [, , pressure] = units; // destructuring the units array
 
-console.log(gender);
+console.log(pressure);

@@ -1,6 +1,6 @@
-let employee = ['Chandler', 'Bing', 'Male'];
+let units = ['l/h', 'C', 'Bar'];
 
-let [fname, ...elements] = employee; // destructuring the employee array
+let [flow, ...elements] = units; // destructuring the units array
 
-console.log(fname);
+console.log(flow);
 console.log(...elements);
