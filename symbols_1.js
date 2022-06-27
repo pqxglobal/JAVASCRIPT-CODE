@@ -1,0 +1,29 @@
+// A Symbol is a unique and immutable primitive value and may be used as the key of an Object property.
+// a symbol value is created by invoking the function Symbol, which dynamically produces an anonymous, unique value.
+// A symbol can have an optional description, but for debugging purposes only.
+// In some programming languages, Symbols are called "atoms".
+// Symbols don't auto-convert.
+
+let s = Symbol('first symbol');
+
+console.log(typeof s);
+console.log(s.toString());
+
+let s2 = Symbol('Test');
+let s3 = Symbol('Test');
+
+console.log(s2 === s3);
+
+let s4 = Symbol.for('RegSymbol');
+let s5 = Symbol.for('RegSymbol');
+
+console.log(s4 === s5);
+console.log(Symbol.keyFor(s4));
+
+let fname = Symbol("FirstName");
+let person = {
+  [fname]: 'Chandler',
+};
+
+console.log(Object.getOwnPropertyNames(person));
+console.log(Object.getOwnPropertySymbols(person));
